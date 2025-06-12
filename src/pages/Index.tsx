@@ -18,12 +18,12 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-light via-background to-coral-light gradient-shift">
+    <div className="min-h-screen bg-gradient-to-br from-red-light via-background to-warm-beige gradient-shift">
       <div className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="font-editorial text-[120px] md:text-[150px] font-bold mb-6 bg-gradient-to-r from-primary to-pink bg-clip-text text-transparent float-animation leading-none">
-            Echo Room
+          <h1 className="font-editorial text-[120px] md:text-[150px] font-bold mb-6 bg-gradient-to-r from-primary to-deep-red bg-clip-text text-transparent float-animation leading-none">
+            Connecting Loop
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-satoshi">
             A safe, anonymous space for women to share career advice, ask questions, and support each other's professional growth.
@@ -54,12 +54,12 @@ const Index = () => {
           </Card>
 
           <Card 
-            className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-pink/50 bg-card/50 backdrop-blur-sm pulse-glow hover:pulse-glow"
+            className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-deep-red/50 bg-card/50 backdrop-blur-sm pulse-glow hover:pulse-glow"
             onClick={() => setCurrentView('browse')}
           >
             <CardHeader className="text-center pb-4">
-              <div className="mx-auto mb-4 p-3 bg-pink/10 rounded-full w-fit group-hover:bg-pink/20 transition-colors float-animation" style={{ animationDelay: '2s' }}>
-                <Users className="h-8 w-8 text-pink" />
+              <div className="mx-auto mb-4 p-3 bg-deep-red/10 rounded-full w-fit group-hover:bg-deep-red/20 transition-colors float-animation" style={{ animationDelay: '2s' }}>
+                <Users className="h-8 w-8 text-deep-red" />
               </div>
               <CardTitle className="text-2xl mb-2 font-editorial">Browse & Answer</CardTitle>
               <CardDescription className="text-base font-satoshi">
@@ -67,7 +67,7 @@ const Index = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <Button className="w-full bg-pink hover:bg-pink/90 text-white font-semibold py-3 font-satoshi">
+              <Button className="w-full bg-deep-red hover:bg-deep-red/90 text-white font-semibold py-3 font-satoshi">
                 Explore Questions
                 <ArrowUp className="ml-2 h-4 w-4 rotate-45" />
               </Button>
@@ -77,7 +77,7 @@ const Index = () => {
 
         {/* Feature Highlights */}
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-6 font-editorial text-primary">Why Echo Room?</h2>
+          <h2 className="text-2xl font-semibold mb-6 font-editorial text-primary">Why Connecting Loop?</h2>
           <div className="grid md:grid-cols-3 gap-6 text-sm">
             <div className="p-4 float-animation" style={{ animationDelay: '1s' }}>
               <div className="text-primary font-semibold mb-2 font-satoshi">100% Anonymous</div>

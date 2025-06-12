@@ -74,7 +74,7 @@ const AskQuestion = ({ onBack }: AskQuestionProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-light via-background to-coral-light gradient-shift">
+    <div className="min-h-screen bg-gradient-to-br from-red-light via-background to-warm-beige gradient-shift">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
           <Button 
