@@ -22,7 +22,7 @@ const Index = () => {
       <div className="container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="font-editorial text-[120px] md:text-[150px] font-bold mb-6 bg-gradient-to-r from-primary to-deep-red bg-clip-text text-transparent float-animation leading-none">
+          <h1 className="font-editorial text-[120px] md:text-[150px] font-bold mb-6 bg-gradient-to-r from-primary to-deep-red bg-clip-text text-transparent leading-none">
             Connecting Loop
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-satoshi">
@@ -37,7 +37,7 @@ const Index = () => {
             onClick={() => setCurrentView('ask')}
           >
             <CardHeader className="text-center pb-4">
-              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit group-hover:bg-primary/20 transition-colors float-animation">
+              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit group-hover:bg-primary/20 transition-colors">
                 <MessageCircle className="h-8 w-8 text-primary" />
               </div>
               <CardTitle className="text-2xl mb-2 font-editorial">Ask a Question</CardTitle>
@@ -58,7 +58,7 @@ const Index = () => {
             onClick={() => setCurrentView('browse')}
           >
             <CardHeader className="text-center pb-4">
-              <div className="mx-auto mb-4 p-3 bg-deep-red/10 rounded-full w-fit group-hover:bg-deep-red/20 transition-colors float-animation" style={{ animationDelay: '2s' }}>
+              <div className="mx-auto mb-4 p-3 bg-deep-red/10 rounded-full w-fit group-hover:bg-deep-red/20 transition-colors">
                 <Users className="h-8 w-8 text-deep-red" />
               </div>
               <CardTitle className="text-2xl mb-2 font-editorial">Browse & Answer</CardTitle>
@@ -79,15 +79,15 @@ const Index = () => {
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-2xl font-semibold mb-6 font-editorial text-primary">Why Connecting Loop?</h2>
           <div className="grid md:grid-cols-3 gap-6 text-sm">
-            <div className="p-4 float-animation" style={{ animationDelay: '1s' }}>
+            <div className="p-4">
               <div className="text-primary font-semibold mb-2 font-satoshi">100% Anonymous</div>
               <p className="text-muted-foreground font-satoshi">Share and receive advice without revealing your identity</p>
             </div>
-            <div className="p-4 float-animation" style={{ animationDelay: '3s' }}>
+            <div className="p-4">
               <div className="text-primary font-semibold mb-2 font-satoshi">Expert Insights</div>
               <p className="text-muted-foreground font-satoshi">Learn from experienced women across different industries</p>
             </div>
-            <div className="p-4 float-animation" style={{ animationDelay: '5s' }}>
+            <div className="p-4">
               <div className="text-primary font-semibold mb-2 font-satoshi">Safe Space</div>
               <p className="text-muted-foreground font-satoshi">A supportive environment designed for women's professional growth</p>
             </div>

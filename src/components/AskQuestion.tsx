@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -87,7 +86,7 @@ const AskQuestion = ({ onBack }: AskQuestionProps) => {
 
           <Card className="bg-card/50 backdrop-blur-sm border-2 pulse-glow">
             <CardHeader className="text-center">
-              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit float-animation">
+              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                 <MessageCircle className="h-8 w-8 text-primary" />
               </div>
               <CardTitle className="text-3xl mb-2 font-editorial text-primary">Ask Your Question</CardTitle>
