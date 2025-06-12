@@ -74,24 +74,24 @@ const AskQuestion = ({ onBack }: AskQuestionProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-warm-gray via-background to-coral-light">
+    <div className="min-h-screen bg-gradient-to-br from-pink-light via-background to-coral-light gradient-shift">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
           <Button 
             variant="ghost" 
             onClick={onBack}
-            className="mb-6 text-navy hover:text-navy/80"
+            className="mb-6 text-primary hover:text-primary/80 font-satoshi"
           >
             ← Back to Home
           </Button>
 
-          <Card className="bg-card/50 backdrop-blur-sm border-2">
+          <Card className="bg-card/50 backdrop-blur-sm border-2 pulse-glow">
             <CardHeader className="text-center">
-              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+              <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit float-animation">
                 <MessageCircle className="h-8 w-8 text-primary" />
               </div>
-              <CardTitle className="text-3xl mb-2 text-navy">Ask Your Question</CardTitle>
-              <p className="text-muted-foreground">
+              <CardTitle className="text-3xl mb-2 font-editorial text-primary">Ask Your Question</CardTitle>
+              <p className="text-muted-foreground font-satoshi">
                 Share your question anonymously and get advice from experienced women in your field.
               </p>
             </CardHeader>
@@ -99,7 +99,7 @@ const AskQuestion = ({ onBack }: AskQuestionProps) => {
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-navy">
+                  <label className="block text-sm font-semibold mb-2 text-primary font-satoshi">
                     Category
                   </label>
                   <Select value={category} onValueChange={setCategory}>
@@ -117,23 +117,23 @@ const AskQuestion = ({ onBack }: AskQuestionProps) => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-navy">
+                  <label className="block text-sm font-semibold mb-2 text-primary font-satoshi">
                     Your Question
                   </label>
                   <Textarea
                     value={question}
                     onChange={(e) => setQuestion(e.target.value)}
                     placeholder="Share your question here... Be as detailed as you'd like. Remember, this is completely anonymous."
-                    className="min-h-[150px] resize-none"
+                    className="min-h-[150px] resize-none font-satoshi"
                     maxLength={1000}
                   />
-                  <div className="text-right text-sm text-muted-foreground mt-1">
+                  <div className="text-right text-sm text-muted-foreground mt-1 font-satoshi">
                     {question.length}/1000 characters
                   </div>
                 </div>
 
                 <div className="bg-coral-light/30 border border-primary/20 rounded-lg p-4">
-                  <p className="text-sm text-navy/80">
+                  <p className="text-sm text-primary/80 font-satoshi">
                     <strong>Privacy Note:</strong> Your question will be posted anonymously. 
                     No personal information will be shared or stored.
                   </p>
@@ -141,7 +141,7 @@ const AskQuestion = ({ onBack }: AskQuestionProps) => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 font-satoshi"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Submit Question"}
